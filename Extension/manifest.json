@@ -1,0 +1,14 @@
+{
+    "name": "Phisnet",
+    "description": "Phishing Website Detection",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "phishnet.html",
+      "default_icon": "hello_extensions.png"
+    },
+    "permissions": [
+      "tabs"
+    ]
+  }
+  
