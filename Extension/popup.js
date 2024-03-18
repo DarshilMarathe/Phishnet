@@ -10,6 +10,6 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
 function modelsender(url){
     //to be sent to model
     console.log(url);
-
 }
+
 
