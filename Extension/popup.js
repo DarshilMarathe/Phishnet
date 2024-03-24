@@ -17,7 +17,7 @@ function modelsender(url){
     },
     body: JSON.stringify({
         // Data to send to the backend
-        "checkurl" : "https://www.google.com"
+        "checkurl" : url
     })
     })
     .then(response => response.json())
@@ -29,6 +29,9 @@ function modelsender(url){
     .catch(error => {
         // Handle any errors
         console.log(error)
+        document.getElementById("cc").innerHTML= "Server Error Occured";
+
+        // Link to web && error handling
     });
 
 }
