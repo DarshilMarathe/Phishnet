@@ -10,6 +10,27 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
 function modelsender(url){
     //to be sent to model
     console.log(url);
+    fetch('http://localhost:5000/cextension', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        // Data to send to the backend
+        "checkurl" : "https://www.google.com"
+    })
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response from the backend
+        console.log(data)
+        document.getElementById("cc").innerHTML= data.xx;
+    })
+    .catch(error => {
+        // Handle any errors
+        console.log(error)
+    });
+
 }
 
 

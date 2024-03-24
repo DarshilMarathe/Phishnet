@@ -8,6 +8,9 @@
     },
     "permissions": [
       "tabs"
+    ],
+    "host_permissions" : [
+      "http://localhost:5000/*" 
     ]
-  }
+}
   
